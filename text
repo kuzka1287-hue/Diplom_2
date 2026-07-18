@@ -1,9 +1,9 @@
-api_tests/
+project_root/
+├── data.py                     # константы (BASE_URL, эндпоинты, сообщения)
+├── helpers.py                  # вспомогательные функции (генерация, регистрация, удаление)
+├── requirements.txt
 ├── tests/
-│   ├── conftest.py          # Фикстуры (базовый URL, создание пользователя, токен)
-│   ├── test_user.py         # Тесты создания и логина пользователя
-│   └── test_order.py        # Тесты создания заказа
-├── data.py                  # Константы (URL, сообщения об ошибках)
-├── utils.py                 # Вспомогательные функции (генерация данных)
-├── requirements.txt         # Зависимости
-└── README.md                # Инструкция по запуску
+│   ├── conftest.py             # фикстуры (registered_user, auth_token)
+│   ├── test_user.py            # тесты регистрации и логина
+│   └── test_order.py           # тесты создания заказа
+└── README.md
