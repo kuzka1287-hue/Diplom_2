@@ -1,18 +1,9 @@
 project_root/
-├── data.py                     # Константы (BASE_URL, эндпоинты, ID ингредиентов)
-├── helpers.py                  # Вспомогательные функции
-├── utils.py                    # Утилиты (генерация строк) – можно объединить с helpers
-├── requirements.txt
-├── pages/                      # Page Object'ы
-│   ├── base_page.py
-│   ├── main_page.py
-│   ├── modal_window.py
-│   ├── orders_feed_page.py
-│   └── login_page.py
+├── data.py                     # Константы (URL, эндпоинты, сообщения, ID ингредиентов)
+├── helpers.py                  # Вспомогательные функции (генерация, регистрация, удаление)
+├── requirements.txt            # pytest, requests, allure-pytest
 ├── tests/
-│   ├── conftest.py             # Фикстуры
-│   ├── test_navigation.py
-│   ├── test_ingredient.py
-│   ├── test_ingredient_counter.py
-│   └── test_order_feed.py
+│   ├── conftest.py             # Фикстуры (registered_user, auth_token)
+│   ├── test_user.py            # Тесты регистрации и логина
+│   └── test_order.py           # Тесты создания заказа
 └── README.md
